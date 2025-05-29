@@ -1,0 +1,33 @@
+﻿@model ItemAndCategory
+
+@{
+    ViewData["Title"] = "Create Item";
+}
+
+<div class="container mt-4">
+    <h2>Create Item</h2>
+
+    <form asp-action="CreateItem" method="post">
+        <div class="mb-3">
+            <label asp-for="item.Name" class="form-label"></label>
+            <input asp-for="item.Name" class="form-control" />
+            <span asp-validation-for="item.Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="item.Price" class="form-label"></label>
+            <input asp-for="item.Price" class="form-control" />
+            <span asp-validation-for="item.Price" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="item.CategoryId" class="form-label">Category</label>
+            <select asp-for="item.CategoryId" class="form-select" asp-items="Model.categories">
+                <option value="">-- Select Category --</option>
+            </select>
+            <span asp-validation-for="item.CategoryId" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

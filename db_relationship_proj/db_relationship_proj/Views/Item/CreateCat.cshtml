@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model db_relationship_proj.Models.Category;
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+
+
+<h3>Create an Category</h3>
+
+
+<form asp-action="CreateCat" method="post">
+    <div class="form-group">
+        <label for="name">Name</label>
+
+        <input type="text" class="form-control" asp-for="Name" />
+    </div>
+    @* <div class="form-group">
+        <label for="price">Price</label>
+
+        <input type="number" class="form-control" asp-for="" />
+    </div> *@
+    <button type="submit" class="btn btn-primary"> submit</button>
+</form>
