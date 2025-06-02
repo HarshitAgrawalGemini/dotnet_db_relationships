@@ -165,4 +165,3 @@ C:\Users\Harshit.Agrawal\Desktop\Dot_Net_work\RestApisLearning\RestApisLearning\
 C:\Users\Harshit.Agrawal\Desktop\Dot_Net_work\RestApisLearning\RestApisLearning\obj\Debug\net8.0\RestApisLearning.pdb
 C:\Users\Harshit.Agrawal\Desktop\Dot_Net_work\RestApisLearning\RestApisLearning\obj\Debug\net8.0\RestApisLearning.genruntimeconfig.cache
 C:\Users\Harshit.Agrawal\Desktop\Dot_Net_work\RestApisLearning\RestApisLearning\obj\Debug\net8.0\ref\RestApisLearning.dll
-C:\Users\Harshit.Agrawal\Desktop\Dot_Net_work\RestApisLearning\RestApisLearning\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

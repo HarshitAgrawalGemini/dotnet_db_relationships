@@ -3,11 +3,34 @@
 
 GET {{rootURL}}/api/books/getbooks
 Accept: application/json
-
-GET {{rootURL}}/api/books/getbook/2
+###
+GET {{rootURL}}/api/books/getbook/5
 Accept: application/json
+###
+POST {{rootURL}}/api/books/newbook
+Content-Type:  application/json
+
+{
+    "Title":"Game of Thrones"
+    ,"YearPublished":2001,
+    "Author":"Not Known"
+}
+
+###
+
+PUT {{rootURL}}/api/books/updatebook/5
+Content-Type:  application/json
+
+{
+    "Title":"Game of Thrones"
+    ,"YearPublished":2001,
+    "Author":"Not Known"
+}
 
 
+###
+
+DELETE {{rootURL}}/api/books/delbook/7
 
 
 # @rootURL = http://localhost:5000
