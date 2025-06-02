@@ -64,7 +64,7 @@ namespace db_relationship_proj.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Client");
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("db_relationship_proj.Models.Item", b =>

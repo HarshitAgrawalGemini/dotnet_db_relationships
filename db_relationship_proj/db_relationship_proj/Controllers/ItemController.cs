@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using db_relationship_proj.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Reflection.Metadata.Ecma335;
 namespace db_relationship_proj.Controllers
 {
     public class ItemController : Controller
@@ -91,5 +92,36 @@ namespace db_relationship_proj.Controllers
 
             return RedirectToAction("Index");
         }
+
+
+
+        public async Task<IActionResult> CreateClie()
+        {
+            List<Item> items = await _DBcontext.Items.ToListAsync();
+            ViewBag.Items = items;
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateClie(Client client, List<int> selectedItemIds)
+        {
+            if (ModelState.IsValid)
+            {
+                client.itemClients = selectedItemIds.Select(id => new ItemClient
+                {
+                    ItemId = id
+                }).ToList();
+
+                _DBcontext.Clients.Add(client);
+                await _DBcontext.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Items = await _DBcontext.Items.ToListAsync();
+            return View(client);
+        }
+
+
+
+
     }
 }

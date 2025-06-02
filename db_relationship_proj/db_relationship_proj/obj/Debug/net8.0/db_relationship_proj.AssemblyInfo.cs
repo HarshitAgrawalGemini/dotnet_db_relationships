@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("db_relationship_proj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1313ab7866504c807133adbe210a495876d699a")]
 [assembly: System.Reflection.AssemblyProductAttribute("db_relationship_proj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("db_relationship_proj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

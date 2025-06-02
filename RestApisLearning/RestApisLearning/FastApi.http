@@ -1,0 +1,13 @@
+@rootURL = http://localhost:5000
+
+
+GET {{rootURL}}/api/books/getbooks
+Accept: application/json
+
+GET {{rootURL}}/api/books/getbook/2
+Accept: application/json
+
+
+
+
+# @rootURL = http://localhost:5000

@@ -47,5 +47,6 @@ namespace db_relationship_proj.Data
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<ItemClient> ItemClients { get; set; }
+        public DbSet<Client> Clients { get; set; }
     }
 }

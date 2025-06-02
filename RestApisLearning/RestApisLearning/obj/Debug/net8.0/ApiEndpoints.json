@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "RestApisLearning.Controllers.BooksController",
+    "Method": "GetBookById",
+    "RelativePath": "api/Books/getbook/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApisLearning.Controllers.BooksController",
+    "Method": "GetBooks",
+    "RelativePath": "api/Books/getbooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestApisLearning.Controllers.BooksController",
+    "Method": "CreateBook",
+    "RelativePath": "api/Books/newbook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "RestApisLearning.Models.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
